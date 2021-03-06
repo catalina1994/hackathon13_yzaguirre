@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon 13</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="modalEliminar" class="modal">
+        <div class="modal__caption">
+            <div class="flex justify-end">
+                <i id="btnClose" class="material-icons flex justify-end ">close</i>
+            </div>
+            <p class="my-2 mx-2">Esta seguro que quiere eliminar a esta mascota.</p>
+            <div class="mb-1">
+                <button class="btn borrar">Aceptar</button>
+                <button class="btn btn-line">Cancelar</button>
+            </div>
+        </div>    
+    </div>
+    <form id="modalFormAdd" class="modal" >
+        <div class="modal__caption">
+            <div class="flex justify-end">
+                <i id="btnClose" class="material-icons flex justify-end ">close</i>
+            </div>
+            <div class="form">
+                <h4 class="mb-1 text-center" >Agregar Mascota</h4>
+                <article class="flex align-center">
+                    <label for="Nombre"> Nombre</label>
+                    <input type="text" name="Nombre" id="nombre">   
+                </article>
+                <article class="flex align-center">
+                    <label for="Raza"> Raza</label>
+                    <input type="text" name="Raza" id="raza">
+                </article>
+                <article class="flex align-center">
+                    <label for="Edad"> Edad</label>
+                    <input type="text" name="Edad" id="edad">
+                </article>
+                <article class="flex align-center">
+                    <label for="Peso"> Peso</label>
+                    <input type="text" name="Peso" id="peso">
+                </article>
+                <article class="flex align-center">
+                    <label for="Color"> Color</label>
+                    <input type="text" name="Color" id="color">
+                </article>
+                <article class="flex align-center mb-1">
+                    <label for="Descripcion"> Descripcion</label>
+                    <input type="text" name="Descripcion" id="description">
+                </article>
+            </div>
+            <div class="mb-1">
+                <input class="btn borrar" type="submit" value="Agregar"></input>
+                <button class="btn btn-line">Cancelar</button>
+            </div>
+        </div>    
+    </form>
+    <div class="banner py-1 px-1">
+        <div class="banner__caption">
+            <p class=" my-m1">Hackathon 12</p>
+            <h2 class="banner__title">
+                DOG CRUD 
+            </h2>
+        </div>
+    </div>
+    <section class="my-1">
+        <div class="container">
+            <div class="flex mb-2 justify-between">
+                <h2 class="">DOG CRUD </h2>
+                <button id="btnAgregarDog" class="btn "> Agregar Mascota</button>
+            </div>
+            <div id="listDogs" class="flex justify-between wrap">
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.btn{
+
+    cursor: pointer;
+    padding: .5em 1.2em;
+    border: 1px solid $color-secundary;
+    background-color:$color-secundary;
+    color:#fff;
+    border-radius: 4px;
+    transition: background-color .4s, border .4s ;
+    margin-bottom:.4em;
+    &.btn-line{
+        border: 1px solid $color-secundary;
+        background-color: #fff;
+        color:$color-secundary;
+        transition: background-color .5s, color .5s, border .5s  ;
+        &:hover{
+            color:#fff;
+        }
+    }
+    &:hover{
+        background-color:$color-auxiliar;
+        border: 1px solid $color-auxiliar;
+    }
+}

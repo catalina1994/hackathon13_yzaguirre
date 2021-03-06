@@ -1,0 +1,46 @@
+.card{
+    padding: 1em 1em;
+    background-color: rgb(252, 252, 252);
+    margin: 0 auto;
+    margin-bottom: 1.2em;
+    border-radius:6px;
+    box-shadow: 1px 1px 4px rgba(59, 59, 59, 0.363);
+    transition: transform .5s ;
+    text-align: center;
+    width: 90%;
+    @include mediaQ(576px){
+        width: 31%;
+    }
+    @include mediaQ(972px){
+        width: 23.5%;
+    }
+    &__title{
+        margin :0;
+        margin-bottom: .7em;
+        color: rgb(32, 32, 32);
+        text-align: center;
+    }
+    &__img{
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        border-radius: 50%;
+        img{
+            max-height: 100%;
+        display: block;
+        }
+    }
+    &__list{
+        font-size:$font-size-small;
+        margin-bottom: 1em;
+    }
+
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 1px 1px 12px 3px rgba(59, 59, 59, 0.363);
+        z-index: 1;
+
+    }
+}

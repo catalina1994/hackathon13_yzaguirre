@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name":"Boby",
+        "raza": "Rottweiler",
+        "color": "negro",
+        "edad" : 4,
+        "peso": 30,
+        "descricion": "Es muy cariñoso"
+    },
+    {
+        "id": 2,
+        "name":"Machas",
+        "raza": "Gran danés",
+        "color": "Blanco con negro",
+        "edad" : 3,
+        "peso": 25,
+        "descricion": "Es muy alegre y jugueton"
+    },
+    {
+        "id": 3,
+        "name":"Gordon",
+        "raza": "Bulldog",
+        "color": "Crema con negro",
+        "edad" : 3,
+        "peso": 30,
+        "descricion": "Es muy comelon y tranquilo"
+    },
+    {
+        "id": 4,
+        "name":"Mersi",
+        "raza": "Poodle",
+        "color": "Blanco",
+        "edad" : 3,
+        "peso": 25,
+        "descricion": "Es muy coqueta y cariñosa"
+    },
+    {
+        "id": 5,
+        "name":"Marlon",
+        "raza": "Doberman",
+        "color": "negro",
+        "edad" : 4,
+        "peso": 40,
+        "descricion": "Es muy tranquilo pero veces es muy jugueton"
+    },
+    {
+        "id": 6,
+        "name":"Lisa",
+        "raza": "Bichón maltés",
+        "color": "Blanco",
+        "edad" : 2,
+        "peso": 15,
+        "descricion": "Es tierna y muy melosa"
+    },
+    {
+        "id": 7,
+        "name":"Roky",
+        "raza": "Bull terrier",
+        "color": "Blanco",
+        "edad" : 3,
+        "peso": 25,
+        "descricion": "Es muy juqueton y algo tosco"
+    },
+    {
+        "id": 8,
+        "name":"Dylan",
+        "raza": "Dálmata",
+        "color": "Blanco con negro",
+        "edad" : 3,
+        "peso": 35,
+        "descricion": "Es muy alegre y cariñoso con todos"
+    }
+]
