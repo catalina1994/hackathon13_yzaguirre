@@ -8,11 +8,14 @@ const listDogs = document.getElementById('listDogs'),
       btnAgregarDog = document.getElementById('btnAgregarDog'),
       modalFormAdd = document.getElementById('modalFormAdd')
       
+function cargarDatos(){
+    fetch('dataPerritos.json')
+.then(response =>{
+    return response.json();
+})
 
- async function getInfoDog(){
-    try{ //correcto
-       const Dogs = await fetch('../data-perritos.json'),
-             InfoDogs = await Dogs.json();
+.then(InfoDogs =>{
+    
         let template =''
        InfoDogs.forEach(InfoDog =>{
             template+=`
@@ -127,9 +130,11 @@ const listDogs = document.getElementById('listDogs'),
        listDogs.appendChild(cardNewDog)
 
    }
-
-    } catch(error){
-        console.log(error)
-    }
+})
+.catch(error=>{
+    console.log(error)
+})
+ 
 }
-getInfoDog();
+
+cargarDatos();
